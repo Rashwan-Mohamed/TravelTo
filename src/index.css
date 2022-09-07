@@ -664,7 +664,7 @@ footer {
   }
 
   .photoContainer img {
-    height: fit-content;
+    height: 100%;
     width: fit-content;
   }
   .gallery {
@@ -717,4 +717,5 @@ footer {
   .header-title {
     font-family: 'Roboto';
   }
+ 
 }
