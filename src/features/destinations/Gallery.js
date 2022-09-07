@@ -30,6 +30,8 @@ const Gallery = ({ name }) => {
       setGallery([])
       getPhotos(1, 'new')
     }
+
+    return () => setGallery([])
   }, [name])
 
   const getPhotos = async (page, newT) => {
@@ -40,7 +42,9 @@ const Gallery = ({ name }) => {
       const data = await response.json()
       console.log(data.results, name)
       if (newT === 'new') {
-        setGallery(data.results)
+        setGallery(() => {
+          return [...data.results]
+        })
       } else if (status === 'small-desk') {
         setGallery((old) => {
           let Olen = Math.ceil(old.length)
