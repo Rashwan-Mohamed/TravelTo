@@ -679,4 +679,42 @@ footer {
   footer {
     font-size: 13px;
   }
+
+  header:nth-child(1) > img:nth-child(4) {
+    display: none;
+  }
+
+  header:nth-child(1) > img:nth-child(1) {
+    display: none;
+  }
+
+  header:nth-child(1) > img:nth-child(3) {
+    display: none;
+  }
+
+  header img {
+    width: fit-content;
+  }
+
+  .header-title {
+    font-size: 15px;
+  }
+
+  .header-title {
+    font-size: 14px;
+  }
+
+  main h1 {
+    font-size: 11px;
+    font-family: 'Roboto';
+  }
+
+  main h1 {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  .header-title {
+    font-family: 'Roboto';
+  }
 }
