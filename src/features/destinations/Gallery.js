@@ -53,7 +53,9 @@ const Gallery = ({ name }) => {
           ]
         })
       } else if (status === 'tablet') {
-        setGallery(data.results)
+        setGallery((old) => {
+          return [...old, ...data.results]
+        })
       } else {
         setGallery((old) => {
           let Olen = Math.ceil(old.length / 3)
